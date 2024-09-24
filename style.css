@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    margin: 20px 0;
+    width: 200px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #dbdbdb;
+    background: #fafafa;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3897f0;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #318ce7;
+}
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.or-text {
+    padding: 0 10px;
+    color: #8e8e8e;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.fb-login {
+    background-color: #4267B2;
+    color: white;
+    margin: 5px 0;
+}
+
+.forgot-password {
+    color: #00376b;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.signup-link, .login-link {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+}
+
+.signup-link a, .login-link a {
+    color: #3897f0;
+    text-decoration: none;
+}
+
+.signup-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-top: 20px;
+}
+
+.terms a {
+    color: #00376b;
+    text-decoration: none;
+}
