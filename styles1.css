@@ -1,0 +1,106 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #022c43; /* Fundo azul oceano escuro */
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Estilos da seção do curso */
+#curso-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+#video-curso {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilos para as questões */
+#questoes {
+    margin-top: 3rem;
+}
+
+#questoes h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.question {
+    background-color: #023e58;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.question label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.question input[type="radio"] {
+    margin-right: 1rem;
+}
+
+.question input[type="submit"] {
+    background-color: #ffae42;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.question input[type="submit"]:hover {
+    background-color: #f39c11;
+}
+
+footer {
+    text-align: center;
+    background-color: #023e58;
+    color: #ffae42;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+.button-container {
+    margin-top: 20px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+}

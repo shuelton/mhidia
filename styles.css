@@ -1,0 +1,176 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #022c43; /* Fundo azul oceano escuro */
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #023e58;
+    color: #ffae42;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffae42;
+}
+
+header nav a {
+    color: #ffae42;
+    text-decoration: none;
+    margin-left: 1rem;
+    transition: transform 0.3s ease;
+}
+
+header nav a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+/* Seção Hero */
+#hero {
+    background: linear-gradient(to right, #023e58, #022c43);
+    color: #ffae42;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Seção Serviços */
+#servicos {
+    padding: 2rem;
+    text-align: center;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.servico {
+    background-color: #023e58;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 1rem 0;
+}
+
+.servico img {
+    width: 100%;
+    height: 200px; /* Define uma altura fixa */
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+    border-radius: 8px;
+}
+
+.servico h3 {
+    margin-top: 0.5rem;
+    color: #ffae42;
+}
+
+.servico:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 174, 66, 0.5);
+}
+
+/* Loja */
+#loja {
+    text-align: center;
+    padding: 2rem;
+    background-color: #023e58;
+    color: #ffae42;
+}
+
+/* Parceiros */
+#parceiros {
+    text-align: center;
+    padding: 2rem;
+    background-color: #022c43; /* Fundo escuro */
+}
+
+#parceiros h3 {
+    color: #ffae42; /* Título na cor laranja */
+    margin-bottom: 1rem;
+}
+
+.parceiros-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ajusta os logos em várias linhas se necessário */
+    gap: 1.5rem; /* Espaçamento entre os logos */
+    margin-top: 1rem;
+}
+
+.parceiros-container img {
+    width: 100px; /* Tamanho das logos */
+    height: auto; /* Mantém a proporção das imagens */
+    filter: brightness(90%); /* Suaviza a aparência */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Efeito suave */
+}
+
+.parceiros-container img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho no hover */
+    filter: brightness(100%); /* Realça as cores no hover */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .servicos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico {
+        width: 90%; /* Tornando os cards de serviço maiores em telas menores */
+        margin-bottom: 1.5rem;
+    }
+
+    #hero {
+        padding: 2rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav a {
+        margin: 0.5rem 0;
+    }
+
+    .parceiros-container img {
+        width: 80px; /* Reduz tamanho dos logos em telas menores */
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #023e58;
+    color: #ffae42;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
